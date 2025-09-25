@@ -12,9 +12,33 @@
   --font-mono: var(--font-geist-mono);
 }
 
+
+
+
+@layer components{
+
+  .info{
+    @apply flex gap-4
+  }
+
+  .shadow{
+    @apply after:content-none top-0 bottom-0 z-10 bg-[rgba(0,0,0,0.6)] inset-shadow-[0_200px_35px_rgba(0,0,0,0.25)]
+  }
+}
+
+@layer base{ 
+  label{
+    @apply px-3 text-xl
+  }
+  input{
+    @apply bg-[#2B2A4A]/80 p-2 px-4 rounded-4xl pr-28
+  }
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }

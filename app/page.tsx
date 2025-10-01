@@ -6,13 +6,14 @@ export default function Home() {
       <div className="m-10 grid grid-cols-1 gap-y-6 items-center justify-items-center">
         <button className="text-gray-300 p-1 px-6 rounded-2xl border-1 text-xl border-amber-50">تواصل معنا</button>
 
-        <h1 className="text-5xl"><span className="text-blue-700">نقدّم لك</span> التقنية… بشكل يناسبك</h1>
-        <p className="text-gray-400 text-xl">كل اللي تحتاجه في مكان واحد – خدمات رقمية متكاملة مصممة لك وتغطي كل جوانب مشروعك</p>
+        <h1 className="text-3xl sm:text-4xl "><span className="text-blue-700">نقدّم لك</span> التقنية… بشكل يناسبك</h1>
+        <p className="text-gray-400 lg:text-xl md:text-[18px] text-center  justify-center items-center">كل اللي تحتاجه في مكان واحد – خدمات رقمية متكاملة مصممة لك وتغطي كل جوانب مشروعك</p>
+        
       </div>
       
-      <div className="bg-[url(/continents.png)] bg-cover inset-shadow-[0_120px_35px_rgba(0,0,0,0.7)] 
-      grid grid-cols-2 justify-items-center ">
-        <div className="grid grid-rows-2 gap-y-4 contact-form ml-50 mt-15">
+      <div className="bg-[url(/continents.png)] bg-cover shadow
+      grid lg:grid-cols-2 justify-items-center md:grid-cols-1">
+        <form className="grid grid-rows-2 gap-y-4 contact-form mt-15 lg:ml-50" action="POST">
           
           <div>
             <label>Name</label>
@@ -38,10 +39,10 @@ export default function Home() {
             <button className="bg-[#2154FE] hover:bg-[#002bb6] cursor-pointer p-2 px-28 rounded-3xl text-2xl">إرسال رسالة</button>
           </div>
 
-        </div>
+        </form>
 
 
-        <div className="bg-[#131422]/80 rounded-2xl py-5 pl-10 pr-30 grid grid-rows-4 gap-10 mr-50 mt-15">
+        <div className="bg-[#131422]/80 rounded-2xl py-5 pl-10 pr-30 grid grid-rows-4 gap-10 mt-15 lg:mr-50">
           <div>
             <h1 className="text-3xl">Search Us</h1>
             

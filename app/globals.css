@@ -22,8 +22,34 @@
   }
 
   .shadow{
-    @apply after:content-none top-0 bottom-0 z-10 bg-[rgba(0,0,0,0.6)] inset-shadow-[0_200px_35px_rgba(0,0,0,0.25)]
+    @apply inset-shadow-[0_120px_35px_rgba(0,0,0,0.7)]
   }
+
+  .card-border{
+    @apply border border-gray-700 p-3 rounded-2xl self-center lg:w-fit 
+  }
+
+  .blue-button{
+    @apply bg-[#2154FE] hover:bg-[#002bb6] cursor-pointer p-2 w-full rounded-3xl text-2xl mt-3
+  }
+  
+  .gray-card-text{
+    @apply text-xl text-gray-500
+  }
+
+  .Image-pos{
+    @apply flex justify-end items-end m-1
+  }
+
+  .about-input{
+    @apply bg-[#585858] rounded-xl
+  }
+
+  .about-list{
+    @apply relative pr-6 after:content-['•'] after:absolute after:right-0 after:text-gray-600
+  }
+
+  
 }
 
 @layer base{ 
@@ -35,6 +61,8 @@
   }
 
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
